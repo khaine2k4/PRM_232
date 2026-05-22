@@ -1,0 +1,12 @@
+# IntelliJ related
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code related
+.vscode/
+
+# System and logs
+.DS_Store
+*.log

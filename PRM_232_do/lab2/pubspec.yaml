@@ -1,0 +1,9 @@
+name: lab2_exercises
+description: Solutions for 17 Dart Lab Exercises
+version: 1.0.0
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  # No external dependencies needed for these exercises
+dev_dependencies:
+  test: ^1.24.0
