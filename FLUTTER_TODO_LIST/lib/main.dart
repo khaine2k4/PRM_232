@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/todo_screen.dart';
+import 'theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,29 +9,23 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // ValueNotifier to hold the current theme mode
+  static final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.dark);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Todo List App',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        brightness: Brightness.dark,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF6366F1),
-          brightness: Brightness.dark,
-          primary: const Color(0xFF6366F1),
-          surface: const Color(0xFF0F172A),
-          onSurface: Colors.white,
-        ),
-        scaffoldBackgroundColor: const Color(0xFF0F172A),
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          centerTitle: false,
-        ),
-      ),
-      home: const TodoScreen(),
+    return ValueListenableBuilder<ThemeMode>(
+      valueListenable: themeNotifier,
+      builder: (context, currentMode, _) {
+        return MaterialApp(
+          title: 'Task Manager',
+          debugShowCheckedModeBanner: false,
+          theme: AppTheme.lightTheme,
+          darkTheme: AppTheme.darkTheme,
+          themeMode: currentMode,
+          home: const TodoScreen(),
+        );
+      },
     );
   }
 }
