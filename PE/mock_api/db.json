@@ -1,0 +1,240 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Demo Admin",
+      "email": "admin@shop.com",
+      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "fullName": "Jane Doe",
+      "email": "customer@shop.com",
+      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+    },
+    {
+      "id": "3",
+      "fullName": "John Smith",
+      "email": "seller@shop.com",
+      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "description": "Over-ear Bluetooth headphones with active noise cancelling and 40h battery life.",
+      "price": 79.99,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400"
+    },
+    {
+      "id": "2",
+      "name": "Mechanical Keyboard",
+      "description": "RGB backlit mechanical keyboard, blue switches, tactile & clicky.",
+      "price": 59.5,
+      "image": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400"
+    },
+    {
+      "id": "3",
+      "name": "Gaming Mouse",
+      "description": "Ergonomic gaming mouse, 16000 DPI adjustable optical sensor, RGB lighting.",
+      "price": 29.0,
+      "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=400"
+    },
+    {
+      "id": "4",
+      "name": "USB-C Hub",
+      "description": "7-in-1 aluminium USB-C hub with 4K HDMI, SD card reader, and 3 USB 3.0 ports.",
+      "price": 34.99,
+      "image": "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=400"
+    },
+    {
+      "id": "5",
+      "name": "Smartwatch",
+      "description": "Fitness tracker with heart rate monitor, sleep tracking, and built-in GPS.",
+      "price": 199.99,
+      "image": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=400"
+    },
+    {
+      "id": "6",
+      "name": "Gaming Monitor 27\"",
+      "description": "1440p QHD IPS gaming monitor, 144Hz refresh rate, 1ms response time.",
+      "price": 349.99,
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400"
+    },
+    {
+      "id": "7",
+      "name": "Ergonomic Office Chair",
+      "description": "High-back mesh desk chair with adjustable lumbar support and 3D armrests.",
+      "price": 249.0,
+      "image": "https://images.unsplash.com/photo-1505797149-43b0069ec26b?w=400"
+    },
+    {
+      "id": "8",
+      "name": "Portable SSD 1TB",
+      "description": "Ultra-fast external solid state drive, up to 1050MB/s read/write speed.",
+      "price": 89.99,
+      "image": "https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?w=400"
+    },
+    {
+      "id": "9",
+      "name": "Wireless Charger Pad",
+      "description": "15W fast charging wireless pad compatible with Qi-enabled devices.",
+      "price": 19.99,
+      "image": "https://images.unsplash.com/photo-1622445262465-2481c4574875?w=400"
+    },
+    {
+      "id": "10",
+      "name": "Noise Cancelling Earbuds",
+      "description": "True wireless earbuds with smart noise cancelling, touch control, water resistance.",
+      "price": 129.99,
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400"
+    },
+    {
+      "id": "11",
+      "name": "HD Webcam 1080p",
+      "description": "Full HD webcam with built-in microphone and privacy cover for video calls.",
+      "price": 49.99,
+      "image": "https://images.unsplash.com/photo-1603539951662-75d3c8cfa2b9?w=400"
+    },
+    {
+      "id": "12",
+      "name": "Desk Pad",
+      "description": "Large felt desk organizer mat, non-slip, protect laptop and mouse.",
+      "price": 15.0,
+      "image": "https://images.unsplash.com/photo-1632292224971-0d45778b3002?w=400"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userEmail": "admin@shop.com",
+      "items": [
+        {
+          "productId": "1",
+          "name": "Wireless Headphones",
+          "price": 79.99,
+          "quantity": 1
+        },
+        {
+          "productId": "3",
+          "name": "Gaming Mouse",
+          "price": 29.0,
+          "quantity": 2
+        }
+      ],
+      "total": 137.99,
+      "createdAt": "2026-07-03T08:30:00.000Z"
+    },
+    {
+      "id": "2",
+      "userEmail": "customer@shop.com",
+      "items": [
+        {
+          "productId": "2",
+          "name": "Mechanical Keyboard",
+          "price": 59.5,
+          "quantity": 1
+        },
+        {
+          "productId": "4",
+          "name": "USB-C Hub",
+          "price": 34.99,
+          "quantity": 1
+        }
+      ],
+      "total": 94.49,
+      "createdAt": "2026-07-03T09:15:00.000Z"
+    },
+    {
+      "id": "3",
+      "userEmail": "customer@shop.com",
+      "items": [
+        {
+          "productId": "5",
+          "name": "Smartwatch",
+          "price": 199.99,
+          "quantity": 1
+        }
+      ],
+      "total": 199.99,
+      "createdAt": "2026-07-02T14:20:00.000Z"
+    },
+    {
+      "id": "4",
+      "userEmail": "admin@shop.com",
+      "items": [
+        {
+          "productId": "6",
+          "name": "Gaming Monitor 27\"",
+          "price": 349.99,
+          "quantity": 2
+        },
+        {
+          "productId": "8",
+          "name": "Portable SSD 1TB",
+          "price": 89.99,
+          "quantity": 1
+        }
+      ],
+      "total": 789.97,
+      "createdAt": "2026-06-15T10:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "userEmail": "seller@shop.com",
+      "items": [
+        {
+          "productId": "7",
+          "name": "Ergonomic Office Chair",
+          "price": 249.0,
+          "quantity": 1
+        }
+      ],
+      "total": 249.0,
+      "createdAt": "2026-06-28T16:45:00.000Z"
+    },
+    {
+      "id": "6",
+      "userEmail": "customer@shop.com",
+      "items": [
+        {
+          "productId": "9",
+          "name": "Wireless Charger Pad",
+          "price": 19.99,
+          "quantity": 3
+        },
+        {
+          "productId": "10",
+          "name": "Noise Cancelling Earbuds",
+          "price": 129.99,
+          "quantity": 1
+        }
+      ],
+      "total": 189.96,
+      "createdAt": "2025-12-25T11:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "userEmail": "admin@shop.com",
+      "items": [
+        {
+          "productId": "11",
+          "name": "HD Webcam 1080p",
+          "price": 49.99,
+          "quantity": 1
+        },
+        {
+          "productId": "12",
+          "name": "Desk Pad",
+          "price": 15.0,
+          "quantity": 2
+        }
+      ],
+      "total": 79.99,
+      "createdAt": "2025-05-01T09:00:00.000Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
